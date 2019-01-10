@@ -1,0 +1,930 @@
+body {
+    background: white;
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: Eusthalia;
+    src: url("../NoMilkAssets/Fonts/eusthalia_sans_slant-webfont.woff");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../NoMilkAssets/Fonts/lato-light-webfont.woff");
+}
+
+@font-face {
+    font-family: Odachi;
+    src: url("../NoMilkAssets/Fonts/odachi-webfont.woff");
+}
+
+#page-wrap {
+    /*Not Being Used Currently*/
+    background-color: white;
+    /*padding: 10px;*/
+}
+
+.main-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.wide-header {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.left-image-spot {
+    position: relative;
+    display: inline-block;
+    float: left;
+    background-image: url("../NoMilkAssets/Photos/Header - Coffee Cup.png");
+    background-size: cover;
+    width: 64vw;
+    height: 60vw;
+    left: 0%;
+    text-align: center;
+}
+
+.wide-image-div {
+	background-image: url("../NoMilkAssets/Photos/Header - Coffee Cup - Wide.png");
+	background-size: cover;
+	position: relative;
+	display: inline-block;
+	float:left;
+	text-align: center;
+	width: 60vw;
+	height: 31vw;
+}
+
+.left-image-spot-wide p {
+    font-family: Odachi;
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    left: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-nav-bar {
+    position: absolute;
+    top: 2vw;
+}
+
+.wide-nav-bar {
+    position: absolute;
+    top: 1vw;
+}
+
+.nav-item {
+    position: relative;
+    font-family: Eusthalia;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    float: left;
+    text-align: left;
+    z-index: 1;
+}
+
+.nav-item a:link, a:visited {
+    color: #300C06;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item a span {
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%, rgba(255,0,0,0) 40%, #EADFC0 40%, #EADFC0 90%, rgba(255,0,0,0) 90%);
+}
+
+.nav-item a span:hover {
+    color: #EADFC0;
+    background: linear-gradient(to bottom, #300C06 0%, #300C06 100%);
+}
+
+.nav-item a span img {
+    align-items: right;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 2.4vw;
+    left: 56vw;
+    width: 1.74vw;
+    height: 2vw;
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%, rgba(255,0,0,0) 60%, #EADFC0 40%, #EADFC0 100%, rgba(255,0,0,0) 90%);
+    z-index: 2;
+}
+
+.num-items-div {
+    position: absolute;
+    top: 1.6vw;
+    left: 1.3vw;
+    width: 1.74vw;
+    height: 2vw;
+    z-index: 1;
+}
+
+#cart-items {
+    font-family: Eusthalia;
+    font-size: 0.8vw;
+    background-color: #DA4E31;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    padding: 0.2vw;
+}
+
+#cart-pic {
+    height: 130%;
+    width: auto;
+}
+
+/*
+#cart-pic:hover {
+    height: 140%;
+    width: auto;
+}*/
+
+.main-header-text-box {
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    width: 35%;
+    height: 55%;
+    font-family: Odachi;
+    color: white;
+    text-align: center;
+}
+
+.wide-header-text-box {
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    width: 35%;
+    height: 55%;
+    font-family: Odachi;
+    color: white;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 10vw;
+}
+
+.wide-small-text {
+    font-size: 9vw;
+}
+
+.bigger-text {
+    position: absolute;
+    top: 21%;
+    font-size: 17vw;
+}
+
+.wide-bigger-text {
+    position: absolute;
+    top: 35%;
+	left: 12%;
+    font-size: 13vw;
+}
+
+.brown-box {
+    font-family: Eusthalia;
+    text-align: center;
+    background-color: #300C06;
+    color: white;
+    height: 22vw;
+    padding-top: 9vw;
+    font-size: 3vw;
+}
+
+.wide-brown-box {
+    font-family: Eusthalia;
+    text-align: center;
+    background-color: #300C06;
+    color: white;
+    height: 22vw;
+    padding-top: 9vw;
+}
+
+.wide-brown-box-contact {
+    font-family: Eusthalia;
+    text-align: center;
+    background-color: #300C06;
+    color: white;
+    height: 18vw;
+    padding-top: 13vw;
+}
+
+.shop-title {
+	font-size: 2.8vw;
+}
+
+.shop-subtitle {
+	font-size: 1.3vw;
+}
+
+.orange-box {
+    font-family: Eusthalia;
+    text-align: center;
+    background-color: #DA4E31;
+    color: #300C06;
+    height: 20vw;
+    padding-top: 9vw;
+    font-size: 3vw;
+}
+
+.coffee-heading {
+    padding: 1px;
+}
+
+.beige-underline {
+    font-family: Odachi;
+    color: #300C06;
+    font-size: 10vw;
+    text-align: center;
+    vertical-align: center;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.beige-underline span {
+    background: linear-gradient(to bottom, white 0%, white 60%, #EADFC0 60%, #EADFC0 90%, white 90%)
+}
+
+p {
+    font-family: Eusthalia;
+}
+
+.subtitle {
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.coffee-menu {
+    vertical-align: center;
+    font-family: Eusthalia;
+    font-size: 1.5vw;
+    color: #300C06;
+}
+
+#coffee-menu-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.coffee-type {
+    text-align: left;
+}
+
+.coffee-price {
+    text-align: right;
+}
+
+.sandwich-menu {
+    vertical-align: center;
+    font-family: Eusthalia;
+    font-size: 1.5vw;
+    color: #300C06;
+}
+
+#sandwich-table {
+    width: 100%;
+    /*table-layout: fixed;*/
+}
+
+.sandwich-type {
+    text-align: left;
+    width:40%;
+}
+
+.sandwich-cost {
+    text-align: right;
+    width:10%;
+}
+
+.sandwich-description {
+    text-align: left;
+    font-family: Lato;
+    font-size: 1.5vw;
+    width:40%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.stumptown-coffee {
+    position: relative;
+    width: 77vw;
+    margin-top: 16vw;
+    left: 22vw;
+    height: 24vw;
+    font-family: Eusthalia;
+    font-size: 3vw;
+    background-color: #EADFC0;
+}
+
+#stumptown {
+    position: absolute;
+    bottom: 5vw;
+    left: -15vw;
+    width: 25vw;
+}
+
+.st-top {
+    position: absolute;
+    font-size: 1.75vw;
+    top: 6vw;
+    left: 19vw;
+}
+
+.st-middle {
+    position: absolute;
+    font-size: 4.3vw;
+    top: 9vw;
+    left: 19vw;
+    z-index: 0;
+    background: linear-gradient(to bottom, #EADFC0 0%, #EADFC0 60%, #DA4E31 60%, #DA4E31 100%, #EADFC0 100%);
+}
+
+.st-bottom {
+    position: absolute;
+    font-size:1.75vw;
+    top: 18vw;
+    left: 57vw;
+    z-index:3;
+}
+
+.st-bottom button {
+    background-color: #300C06;
+    font-family: Eusthalia;
+    font-size: 1.75vw;
+    color: #EADFC0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+table {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.locally-owned-banner {
+    position: relative;
+    width: 75vw;
+    margin-top: 16vw;
+    left: 0vw;
+    height: 24vw;
+    font-family: Eusthalia;
+    font-size: 3vw;
+    background-color: #EADFC0;
+    max-width: 100%;
+}
+
+#indoor-photo {
+    position: absolute;
+    bottom: 5vw;
+    right: -22vw;
+    width: 37vw;
+}
+
+.l-heading {
+    position: absolute;
+    font-size: 2.5vw;
+    top: 3vw;
+    left: 15vw;
+}
+
+.l-paragraph {
+    position: absolute;
+    font-family: Lato;
+    font-size: 1.8vw;
+    top: 8vw;
+    left: 15vw;
+    z-index: 0;
+}
+
+.l-bottom {
+    position: absolute;
+    font-size: 1.75vw;
+    top: 19vw;
+    left: 15vw;
+    z-index: 3;
+}
+
+.l-bottom button {
+    background-color: #300C06;
+    font-family: Eusthalia;
+    font-size: 1.75vw;
+    color: #EADFC0;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.quality-banner {
+    position: relative;
+    width: 75vw;
+    margin-top: 16vw;
+    left: 0vw;
+    height: 18vw;
+    font-family: Eusthalia;
+    font-size: 3vw;
+    background-color: #EADFC0;
+    max-width: 100%;
+}
+
+#quality-photo {
+    position: absolute;
+    bottom: 5vw;
+    right: -15vw;
+    width: auto;
+    height: 20vw;
+}
+
+.q-heading {
+    position: absolute;
+    font-size: 2.5vw;
+    top: 3vw;
+    left: 15vw;
+}
+
+.q-paragraph {
+    position: absolute;
+    font-family: Lato;
+    font-size: 1.8vw;
+    top: 5.5vw;
+    left: 15vw;
+    z-index: 0;
+}
+
+.map-div {
+    position: relative;
+    width: 76.2vw;
+    margin-top: 16vw;
+    left: 22vw;
+    height: 30vw;
+    font-family: Eusthalia;
+    font-size: 3vw;
+    background-color: #EADFC0;
+    z-index: 0;
+}
+
+.map-address {
+    position: absolute;
+    font-size: 2.5vw;
+    top: 20vw;
+    left: 15vw;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, #DA4E31 60%, #DA4E31 100%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+#map-pic {
+    position: absolute;
+    top: -6vw;
+    left: -20vw;
+    width: 70vw;
+    height: auto;
+    z-index: -1;
+}
+
+.address-div {
+    z-index: 2;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.footer-banner {
+    width: 100%;
+    height: 10vw;
+    background-color: #300C06;
+    padding-top: 2vw;
+}
+
+#footer-table {
+    width:100%;
+}
+
+.footer-text {
+    color: white;
+    font-family: Eusthalia;
+    font-size: 1.3vw;
+    font-weight: lighter;
+}
+
+.footer-text p {
+    font-family: Lato;
+}
+
+.coffee-sale {
+	width: 100%;
+	text-align: center;
+	vertical-align: center;
+}
+
+#shop-fr {
+	height: 35vw;
+	width: 30vw;
+}
+
+#shop-tc {
+	height: 35vw;
+	width: 30vw;
+}
+
+.equip-sale {
+	width: 61vw;
+	text-align: center;
+	vertical-align: center;
+	position: relative;
+	margin-left: 18vw;
+	margin-right: 18vw;
+}
+
+.equip-left {
+	float: left;
+	height: 26vw;
+	width: 30vw;
+}
+
+.equip-right {
+	float: right;
+	height: 26vw;
+	width: 30vw;
+}
+
+.equip-middle {
+	vertical-align: center;
+	text-align: center;
+	height: 20vw;
+	width: 40vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+#shop-brew-kit {
+	height: 20vw;
+	width: 38vw;
+}
+
+#shop-aero {
+	height: 26vw;
+	width: 19vw;
+}
+
+#shop-french {
+	height: 26vw;
+	width: 18vw;
+}
+
+.coffee-table {
+	position: absolute;
+	left: 11vw;
+	width: 77vw;
+	display: flex;
+	justify-content: center;
+	color: #300C06;
+}
+
+#coffee-sale-table {
+	align-self: center;
+	width: 100%;
+}
+
+.coffee-names {
+	font-family: Eusthalia;
+	font-size: 2vw;
+}
+
+.coffee-description {
+	font-family: Lato;
+	font-size: 1.5vw;
+}
+
+.equip-div {
+	position: relative;
+	display: flex;
+	height: auto;
+	left: 18vw;
+	width: 60.9vw;
+	font-family: Eusthalia;
+	font-size: 1.8vw;
+	color: #300C06;
+}
+
+.equip-div2 {
+	position: relative;
+	display: flex;
+	height: auto;
+	left: 28vw;
+	width: 40vw;
+	font-family: Eusthalia;
+	font-size: 1.8vw;
+	color: #300C06;
+}
+
+.equip-name {
+	width: 25vw;
+	text-align: left;
+}
+
+.equip-description {
+	width: 30vw;
+	font-family: Lato;
+	font-size: 1.5vw;
+}
+
+.equip-button {
+	width: 30vw;
+    text-align: center;
+}
+
+.equip-button2 {
+	width: 40vw;
+    text-align: center;
+}
+
+.spacer-div {
+    width: 100%;
+    height: 5vw;
+}
+.spacer-contact {
+    width: 100%;
+    height: 5vw;
+}
+
+.left-price {
+	padding-right: 1.5vw;
+}
+
+.equip-price {
+	width: 5vw;
+	text-align: right;
+}
+
+.equip-price2 {
+	width: 5vw;
+	text-align: right;
+	position: absolute;
+	left: 35vw;
+}
+
+.equip-description2 {
+	width: 40vw;
+	font-family: Lato;
+	font-size: 1.5vw;
+}
+
+
+#grinder-overlay {
+    position: absolute;
+    top: -6vw;
+    left: -9vw;
+    width: 25vw;
+}
+
+.whole-bean-coffee {
+	position: relative;
+	width: 75vw;
+	margin-top: 16vw;
+	left: 22vw;
+	height: 24vw;
+	font-family: Eusthalia;
+	font-size: 3vw;
+	background-color: #EADFC0;
+	max-width: 100%;
+}
+
+.whole-bean-title {
+	font-family: Eusthalia;
+	color: #300C06;
+	font-size: 2.5vw;
+	position: relative;
+	left: 19vw;
+	top: 6vw;
+}
+
+.whole-bean-paragraph {
+	font-family: Lato;
+	text-align: left;
+	color: #300C06;
+	font-size: 1.8vw;
+	width: 60%;
+	position: relative;
+	top: 5vw;
+	left: 19vw;
+}
+
+.add-to-cart-button {
+	background-color: #300C06;
+	color: #EADFC0;
+	font-family: Eusthalia;
+	cursor: pointer;
+	font-size: 1.5vw;
+}
+
+#shop-table-single {
+	width: 50%;
+}
+
+.contact {
+    position: relative;
+    width: 80vw;
+    height: 20vw;
+    left: 8.5vw;
+}
+
+.contact-input {
+    background-color: #DBDBDB;
+    outline-color: white;
+    font-family: Eusthalia;
+    font-size: 1vw;
+    width: 100%;
+    padding: 0.5vw;
+    resize:none;
+    height: 2vw;
+    min-height: 2vw;
+    vertical-align: center;
+}
+
+.left-input {
+    float: left;
+    width: 38.5vw;
+    height: 1vw;
+    resize: none;
+}
+
+.right-input {
+    float: right;
+    width: 38.5vw;
+    height: 1vw;
+    resize: none;
+}
+
+.left-input-cc {
+    float: left;
+    width: 66vw;
+    height: 1vw;
+    resize: none;
+}
+
+.right-input-cc {
+    float: right;
+    width: 13vw;
+    height: 1vw;
+    resize: none;
+    text-align: right;
+    vertical-align: center;
+}
+
+.cc-image {
+    height: 3vw;
+    width: 6vw;
+}
+
+.submit-button {
+    text-align: center;
+    padding-top: 2vw;
+}
+
+#message-box {
+    width: 81vw;
+    height: 10vw;
+    background-color: #DBDBDB;
+    outline-color: white;
+    font-family: Eusthalia;
+    resize: none;
+    font-size: 1vw;
+}
+
+.cart-items {
+    position: relative;
+    width: 80vw;
+    left: 8.5vw;
+}
+
+#cart-table {
+    width: 50vw;
+    font-family: Eusthalia;
+    color: #300C06;
+    font-size: 1vw;
+    position: relative;
+    left: 18vw;
+}
+
+.items {
+    width: 25vw;
+    text-align: left;
+    padding-left: 0.8vw;
+}
+
+.quantity {
+    width: 10vw;
+    text-align: center;
+}
+
+.price {
+    width: 10vw;
+    text-align: center;
+}
+
+#cart-table td {
+    padding: 0.5vw;
+}
+
+#cart-table-top {
+    background: linear-gradient(to bottom, white 0%, white 60%, #DA4E31 60%, #DA4E31 100%, white 100%)
+}
+
+.remove-column {
+    text-align: center;
+    width: 5vw;
+}
+
+.remove-column:hover {
+    cursor: pointer;
+}
+
+.remove-heading {
+    background: white;
+    width: 5vw;
+}
+
+.cart-table-bottom-underline {
+    background: linear-gradient(to bottom, white 0%, white 60%, #DA4E31 60%, #DA4E31 80%, white 80%)
+}
+
+.cart-table-bottom-underline2 {
+    background: linear-gradient(to bottom, #EADFC0 0%, #EADFC0 60%, #DA4E31 60%, #DA4E31 80%, #EADFC0 80%)
+}
+
+.cart-totals {
+    background-color: #EADFC0;
+    font-family: Eusthalia;
+    font-size: 1vw;
+    position: relative;
+    height: 5vw;
+    width: 30vw;
+    left: 42vw;
+    top: -0.2vw;
+    padding: 1vw;
+}
+
+.cart-table-beige {
+    background-color: #EADFC0;
+    padding: 5px;
+}
+
+hr {
+    border-color: #DA4E31;
+    background-color: #DA4E31;
+    height: 0.1vw;
+    width: 23vw;
+    position: relative;
+    left: -3.5vw;
+}
+
+.line-totals {
+    width: 16vw;
+    height: 2vw;
+}
+
+.line-total-left {
+    float: left;
+    width: 7vw;
+    height: 2vw;
+    text-align: left;
+}
+
+.line-total-right {
+    float: right;
+    width: 6vw;
+    height: 2vw;
+    text-align: center;
+}
+
+#credit-card-input {
+    width: 60%;
+}
+
+#credit-card-images {
+    width: 40%;
+}

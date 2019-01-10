@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>No Milk Coffee Shop</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/shoppingCart.js"></script>
+</head>
+
+<body>
+    <div id="page-wrap">
+
+		<div class="main-header">
+
+            <div class="left-image-spot">
+                <nav>
+                    <ul class="main-nav-bar">
+                        <li class="nav-item"><a href="index.html"><span>Home</span></a></li>
+                        <li class="nav-item"><a href="shop.html"><span>Shop</span></a></li>
+                        <li class="nav-item"><a href="contact.html"><span>Contact</span></a></li>
+                    </ul>
+                    <div class="cart-icon">
+                        <a href="cart.html"><img id="cart-pic" src="./NoMilkAssets/Icons/Cart.svg"></a>
+                        <div class="num-items-div"><span id="cart-items">0</span></div>
+                        <script>updateHeaderTotal()</script>
+                    </div>
+                </nav>
+                <div class="main-header-text-box">
+                    <div class="small-text">No</div>
+                    <div class="bigger-text">Milk</div>
+                </div>
+            </div> <!-- end of left-image-spot-->
+
+            <div class="brown-box">
+                Coffee <br> & <br> Sandwiches
+            </div>
+            <div class="orange-box">
+                Every Day <br> <b> &middot; </b> 7 to 7 <b> &middot; </b>
+            </div>
+
+        </div> <!-- end of main-header -->
+
+        <div class="coffee-heading">
+            <h1 class="beige-underline"><span>Coffee<span></h1>
+            <p class="subtitle"> Brewed to order </p>
+        </div>
+
+        <div class="coffee-menu">
+            <br>
+            <table id="coffee-menu-table">
+                <tr>
+                    <td class="coffee-type">Americano</td>
+                    <td class="coffee-price">3 &nbsp </td>
+                    <td class="coffee-type">&nbsp Drip</td>
+                    <td class="coffee-price">2</td>
+                </tr>
+                <tr>
+                    <td class="coffee-type">Cortada</td>
+                    <td class="coffee-price">3 &nbsp</td>
+                    <td class="coffee-type">&nbsp Espresso</td>
+                    <td class="coffee-price">4</td>
+                </tr>
+                <tr>
+                    <td class="coffee-type">Cappucino</td>
+                    <td class="coffee-price">4 &nbsp</td>
+                    <td class="coffee-type">&nbsp Cold Brew</td>
+                    <td class="coffee-price">4</td>
+                </tr>
+                <tr>
+                    <td class="coffee-type">Macchiato</td>
+                    <td class="coffee-price">4 &nbsp</td>
+                    <td class="coffee-type">&nbsp Iced Americano</td>
+                    <td class="coffee-price">3.5</td>
+                </tr>
+                <tr>
+                    <td class="coffee-type">Latte</td>
+                    <td class="coffee-price">4.5 &nbsp</td>
+                    <td class="coffee-type">&nbsp Iced Latte</td>
+                    <td class="coffee-price">4.5</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+
+        <div class="stumptown-coffee">
+            <span class="st-top"> Proudly Serving </span>
+            <span class="st-middle"> Stumptown Coffee </span>
+            <span class="st-bottom">
+                <a href="shop.html"><button>Shop Now ></button></a>
+            </span>
+            <img src="./NoMilkAssets/Photos/Shop - French Roast.png" alt="Stumptown Coffee" id="stumptown">
+        </div>
+
+        <div class="clearboth"></div>
+
+        <div class="coffee-heading">
+            <h1 class="beige-underline"><span>Sandwiches<span></h1>
+            <p class="subtitle"> Fresh and Local </p>
+        </div>
+
+        <div class="sandwich-menu">
+            <br>
+            <table id="sandwich-table">
+                <tr>
+                    <td class="sandwich-title">Taco in a Bun</td>
+                    <td class="sandwich-cost">8 &nbsp</td>
+                    <td class="sandwich-title">The Sunflower</td>
+                    <td class="sandwich-cost">7</td>
+                </tr>
+                <tr>
+                    <td class="sandwich-description">Braised Beef in adobo sauce, arugula, pickled onion, jalapeno, and feta.</td>
+                    <td>&nbsp</td>
+                    <td class="sandwich-description">Grilled chicken with sprouts, avocado, charred red pepper, cucumber, and roasted garlic hummus.</td>
+                    <td>&nbsp</td>
+                </tr>
+                <tr>
+                    <td class="sandwich-title">Sun Rise</td>
+                    <td class="sandwich-cost">6 &nbsp</td>
+                    <td class="sandwich-title">Butcher Block</td>
+                    <td class="sandwich-cost">9</td>
+                </tr>
+                <tr>
+                    <td class="sandwich-description">Chorizo, sweet potato, sage, avocado, onion, radish, fried egg, sweet chili mayo.</td>
+                    <td>&nbsp</td>
+                    <td class="sandwich-description">Slow roasted porchetta with pesto, arugula, shallots, carmelized onion, and asiago.</td>
+                    <td>&nbsp</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="clearboth"></div>
+
+        <div class="locally-owned-banner">
+                <span class="l-heading">Locally Owned</span>
+                <p class="l-paragraph">
+                    We're proud to be from Saskatoon, serving Saskatoon.<br>
+                    Using local market ingredients and legendary beans, <br>
+                    we're elevating what it means to be a coffee shop. <br>
+                    Come see what we're about, and let us make you a drink.
+                </p>
+                <span class="l-bottom">
+                    <a href="contact.html"><button>Reach Out ></button></a>
+                </span>
+                <img src="./NoMilkAssets/Photos/Feature - Indoor Photo.png" alt="A Look Inside" id="indoor-photo">
+        </div>
+
+        <div class="clearboth"></div>
+
+        <div class="map-div">
+            <div class="address-div">
+                <span class="map-address">107-117 Science Place<span>
+            </div>
+            <img src="./NoMilkAssets/Photos/Footer - Map.png" id="map-pic"></img>
+        </div>
+
+        <div class="clearboth"></div>
+
+        <div class="footer-banner">
+            <table id="footer-table">
+                <tr>
+                    <td class="footer-text">&copy No Milk Coffee</td>
+                    <td rowspan="2" class="footer-text" align="right">
+                        Photography By
+                        <p>Visualhunt </p>
+                        <p>Stumptown Coffee Roasters </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="footer-text">107-117 Science Place <br>
+                        Saskatoon, SK</td>
+                </tr>
+            </table>
+        </div>
+
+    </div> <!-- end of page wrap -->
+
+</body>
+
+</html>

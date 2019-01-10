@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="./scripts/shoppingCart.js"></script>
+    </head>
+
+	<body>
+
+		<div id="page-wrap">
+
+			<div class="wide-header">
+
+				<div class="wide-image-div">
+					<nav>
+						<ul class="wide-nav-bar">
+							<li class="nav-item"><a href="index.html"><span>Home</span></a></li>
+							<li class="nav-item"><a href="shop.html"><span>Shop</span></a></li>
+							<li class="nav-item"><a href="contact.html"><span>Contact</span></a></li>
+						</ul>
+						<div class="cart-icon">
+							<a href="cart.html"><img id="cart-pic" src="./NoMilkAssets/Icons/Cart.svg"></a>
+                            <div class="num-items-div"><span id="cart-items">0</span></div>
+                            <script>updateHeaderTotal()</script>
+						</div>
+					</nav>
+					<div class="wide-header-text-box">
+						<div class="wide-small-text">No</div>
+						<div class="wide-bigger-text">Milk</div>
+					</div>
+				</div> <!-- end of left-image-spot-->
+
+				<div class="wide-brown-box-contact">
+					<span class="shop-title"> Cart</span>
+				</div>
+
+			</div> <!-- end of main-header -->
+
+			<div class="coffee-heading">
+                <h1 class="beige-underline"><span>Cart<span></h1>
+            </div>
+
+			<div class="clearboth"></div>
+
+            <!-- PUT THE CART TABLE HERE -->
+            <div class="cart-items">
+                <table id="cart-table" cellspacing="0">
+                    <tr id="cart-table-top">
+                        <th class="items">Item</th>
+                        <th class="quantity">Quantity</th>
+                        <th class="price">Total</th>
+                        <th class="remove-heading"></th>
+                    </tr>
+                    <tr class="cart-table-bottom-underline">
+                        <td colspan="3"></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+                <div class="cart-totals">
+                    <div class="line-totals">
+                        <div class="line-total-left">Subtotal</div>
+                        <div class="line-total-right" id="subtotal-amount">$0</div>
+                    </div>
+                    <hr>
+                    <div class="line-totals">
+                        <div class="line-total-left">Total</div>
+                        <div class="line-total-right" id="total-amount">$0</div>
+                    </div>
+                </div>
+                <script> updateCart() </script>
+
+            </div>
+
+            <div class="clearboth"></div>
+
+            <div class="coffee-heading">
+                <h1 class="beige-underline"><span>Billing<span></h1>
+            </div>
+
+			<div class="clearboth"></div>
+
+            <div class="contact">
+
+                <div class="contact-line">
+                    <div class="left-input">
+                        <form><textarea class="contact-input" placeholder="First Name" id="fname-billing"></textarea></form>
+                    </div>
+                    <div class="right-input">
+                        <form><textarea class="contact-input" placeholder="Last Name" id="lname-billing"></textarea></form>
+                    </div>
+                </div>
+
+                <div class="spacer-contact"></div>
+
+                <div class="contact-line">
+                    <div class="left-input">
+                        <form><textarea class="contact-input" placeholder="Address (Line One)" id="address-billing1"></textarea></form>
+                    </div>
+                    <div class="right-input">
+                        <form><textarea class="contact-input" placeholder="Address (Line Two)" id="address-billing2"></textarea></form>
+                    </div>
+                </div>
+
+                <div class="spacer-contact"></div>
+
+                <div class="contact-line">
+                    <div class="left-input">
+                        <form><textarea class="contact-input" placeholder="City" id="city-billing"></textarea></form>
+                    </div>
+                    <div class="right-input">
+                        <form><textarea class="contact-input" placeholder="Province/State" id="province-billing"></textarea></form>
+                    </div>
+                </div>
+
+                <div class="spacer-contact"></div>
+
+                <div class="contact-line">
+                    <div class="left-input">
+                        <form><textarea class="contact-input" placeholder="Postal/Zip Code" id="postal-billing"></textarea></form>
+                    </div>
+                    <div class="right-input">
+                        <form><textarea class="contact-input" placeholder="Country" id="country-billing"></textarea></form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clearboth"></div>
+
+            <div class="coffee-heading">
+                <h1 class="beige-underline"><span>Payment<span></h1>
+            </div>
+
+            <div class="clearboth"></div>
+
+            <div class="contact">
+
+                <div class="contact-line">
+                    <div class="left-input">
+                        <form><textarea class="contact-input" placeholder="Name" id="full-name-billing"></textarea></form>
+                    </div>
+                </div>
+
+                <div class="spacer-contact"></div>
+
+                <div class="contact-line">
+                    <div class="left-input-cc">
+                        <form><textarea class="contact-input" placeholder="Credit Card Number" id="credit-card-billing"></textarea></form>
+                    </div>
+                    <div class="right-input-cc">
+                        <img src="./NoMilkAssets/Icons/Mastercard.svg" class="cc-image"></img>
+                        <img src="./NoMilkAssets/Icons/Visa.svg" class="cc-image"></img>
+                    </div>
+                </div>
+
+                <div class="spacer-contact"></div>
+
+                <div class="contact-line">
+                    <div class="left-input">
+                        <form><textarea class="contact-input" placeholder="Expiry Date" id="expiry-billing"></textarea></form>
+                    </div>
+                    <div class="right-input">
+                        <form><textarea class="contact-input" placeholder="Security Code" id="security-code-billing"></textarea></form>
+                    </div>
+                </div>
+
+                <div class="spacer-contact"></div>
+
+                <div class="submit-button">
+                    <button class="add-to-cart-button" id="submit-cart" onclick="completePurchase()">Complete Purchase</button>
+                </div>
+
+            </div>
+
+            <div class="clearboth"></div>
+
+            <div class="quality-banner">
+                    <span class="q-heading">Thank You</span>
+                    <p class="q-paragraph">
+                        Thank you for supporting your local small <br>
+                        business. It's because of your support that <br>
+                        we're able to continue to serve and promote <br>
+                        quality, local products.
+                    </p>
+                    <img src="./NoMilkAssets/Photos/Feature - Coffee in Window.png" alt="Brewing" id="quality-photo">
+            </div>
+
+            <div class="clearboth"></div>
+
+	        <div class="map-div">
+	            <div class="address-div">
+	                <span class="map-address">107-117 Science Place<span>
+	            </div>
+	            <img src="./NoMilkAssets/Photos/Footer - Map.png" id="map-pic"></img>
+	        </div>
+
+			<div class="clearboth"></div>
+
+			<div class="footer-banner">
+				<table id="footer-table">
+					<tr>
+						<td class="footer-text">&copy No Milk Coffee</td>
+						<td rowspan="2" class="footer-text" align="right">
+							Photography By
+							<p>Visualhunt </p>
+							<p>Stumptown Coffee Roasters </p>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-text">107-117 Science Place <br>
+							Saskatoon, SK</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="./scripts/shoppingCart.js"></script>
+    </head>
+
+	<body>
+
+		<div id="page-wrap">
+
+			<div class="wide-header">
+
+				<div class="wide-image-div">
+					<nav>
+						<ul class="wide-nav-bar">
+							<li class="nav-item"><a href="index.html"><span>Home</span></a></li>
+							<li class="nav-item"><a href="shop.html"><span>Shop</span></a></li>
+							<li class="nav-item"><a href="contact.html"><span>Contact</span></a></li>
+						</ul>
+						<div class="cart-icon">
+							<a href="cart.html"><img id="cart-pic" src="./NoMilkAssets/Icons/Cart.svg"></a>
+                            <div class="num-items-div"><span id="cart-items">0</span></div>
+                            <script>updateHeaderTotal()</script>
+						</div>
+
+					</nav>
+					<div class="wide-header-text-box">
+						<div class="wide-small-text">No</div>
+						<div class="wide-bigger-text">Milk</div>
+					</div>
+				</div> <!-- end of left-image-spot-->
+
+				<div class="wide-brown-box">
+					<span class="shop-title"> Shop </span>
+					<br><br>
+					<span class="shop-subtitle"> Coffee <br> Equipment <br> Brew Kits </span>
+				</div>
+
+			</div> <!-- end of main-header -->
+
+			<div class="coffee-heading">
+                <h1 class="beige-underline"><span>Coffee<span></h1>
+            </div>
+
+			<div class="coffee-sale">
+				<img src="./NoMilkAssets/Photos/Shop - French Roast.png" alt="French Roast Coffee" id="shop-fr"></img>
+				<img src="./NoMilkAssets/Photos/Shop - Trapper Creek.png" alt="Trapper Creek Coffee" id="shop-tc"></img>
+			</div>
+
+			<div class="coffee-table">
+				<table id="coffee-sale-table">
+					<tr class="coffee-names">
+						<td>Stumptown Coffee</td>
+						<td>15&nbsp</td>
+						<td>Stumptown Coffee</td>
+						<td>15</td>
+					</tr>
+					<tr class="coffee-description">
+						<td colspan="2">French Roast</td>
+						<td colspan="2">Trapper Creek</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><button class="add-to-cart-button" id="fr-buy" onclick="addToCart('French Roast')">Add to Cart</button></td>
+						<td colspan="2" align="center"><button class="add-to-cart-button" id="tc-buy" onclick="addToCart('Trapper Creek')">Add to Cart</button></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="clearboth"></div>
+			<br><br>
+
+			<div class="whole-bean-coffee">
+	                <span class="whole-bean-title">Whole Bean Coffee</span>
+	                <p class="whole-bean-paragraph">
+						Whole bean coffee that is fresh, perfectly roasted, <br>
+						and ready for your favourite grinder. Made from a <br>
+						clean, sustainable, and green bean farming processes.
+	                </p>
+	                <img src="./NoMilkAssets/Photos/Shop - Grinder.png" alt="Grinder" id="grinder-overlay">
+	        </div>
+
+			<div class="coffee-heading">
+                <h1 class="beige-underline"><span>Equipment<span></h1>
+            </div>
+
+			<div class="equip-sale">
+				<div class="equip-left">
+					<img src="./NoMilkAssets/Photos/Shop - Aeropress.png" alt="Aeropress" id="shop-aero"></img>
+				</div>
+				<div class="equip-right">
+					<img src="./NoMilkAssets/Photos/Shop - French Press.png" alt="French Press" id="shop-french"></img>
+				</div>
+			</div>
+
+			<div class="equip-div">
+				<div class="equip-name">Aeropress</div>
+				<div class="equip-price left-price">30</div>
+				<div class="equip-name">Bodum French Press</div>
+				<div class="equip-price">36</div>
+			</div>
+
+			<div class="equip-div">
+				<div class="equip-description left-price">
+					The Aeropress coffee system is portable, lightweight,
+					 and brews a sweet, full-bodied cup.
+				</div>
+				<div class="equip-description">
+					This 8-cup press produces a result that big flavor,
+					body, and mouthfeel.
+				</div>
+			</div>
+
+            <div class="equip-div">
+                <div class="equip-button">
+                    <button class="add-to-cart-button" id="aeropress-buy" onclick="addToCart('Aeropress')">Add to Cart</button>
+                </div>
+                <div class="equip-button">
+                    <button class="add-to-cart-button" id="french-press-buy" onclick="addToCart('Bodum French Press')">Add to Cart</button>
+                </div>
+            </div>
+
+			<div class="clearboth"></div>
+            <div class="spacer-div"></div>
+            <div class="clearboth"></div>
+
+			<div class="equip-sale">
+				<div class="equip-middle">
+					<img src="./NoMilkAssets/Photos/Shop - Brew Kit.png" alt="Brew Kit" id="shop-brew-kit"></img>
+				</div>
+			</div>
+
+			<div class="equip-div2">
+				<div class="equip-name">Chemist Brew Kit</div>
+				<div class="equip-price2">215</div>
+			</div>
+
+			<div class="equip-div2">
+				<div class="equip-description2">
+					The Chemist contains every pieve of equipment you
+					need to get from beans to brew. Chemex brewer,
+					filters, Baratza Encore Burr Grinder, ceramic mug,
+					Nobavita Gooseneck Kettle, and pocket scale.
+				</div>
+			</div>
+
+            <div class="equip-div2">
+                <div class="equip-button2">
+                    <button class="add-to-cart-button" id="brew-kit-buy" onclick="addToCart('Chemist Brew Kit')">Add to Cart</button>
+                </div>
+            </div>
+
+			<div class="clearboth"></div>
+
+            <div class="quality-banner">
+                    <span class="q-heading">Quality Ingredients</span>
+                    <p class="q-paragraph">
+                        Using the highest quality equipment, we are able to <br>
+                        pull the most flavourful shots out of our coffee. <br>
+                        We try to extend that ability to you by offering the <br>
+                        best equipment to you at the best prices.
+                    </p>
+                    <img src="./NoMilkAssets/Photos/Feature - Brewing.png" alt="Brewing" id="quality-photo">
+            </div>
+
+            <div class="clearboth"></div>
+
+	        <div class="map-div">
+	            <div class="address-div">
+	                <span class="map-address">107-117 Science Place<span>
+	            </div>
+	            <img src="./NoMilkAssets/Photos/Footer - Map.png" id="map-pic"></img>
+	        </div>
+
+			<div class="clearboth"></div>
+
+			<div class="footer-banner">
+				<table id="footer-table">
+					<tr>
+						<td class="footer-text">&copy No Milk Coffee</td>
+						<td rowspan="2" class="footer-text" align="right">
+							Photography By
+							<p>Visualhunt </p>
+							<p>Stumptown Coffee Roasters </p>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-text">107-117 Science Place <br>
+							Saskatoon, SK</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
